@@ -50,6 +50,10 @@ function writePassword() {
       passwordSet += special;
   }
 
+// If blank input
+  if (passwordSet === "") {
+    alert("Please select at least one type of character you would like to include!");
+  }
 
 //Password display
   if (Number(passwordLengthInput >= 8) && Number(passwordLengthInput <= 128)) {
