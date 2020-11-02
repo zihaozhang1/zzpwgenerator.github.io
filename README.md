@@ -4,6 +4,7 @@ This an application that an employee can use to generate a random password based
 # Demonstration
 ![image](https://user-images.githubusercontent.com/72529794/97834376-bcf0a080-1ca5-11eb-9051-d44b2b2a07c3.png)
 
+# Live Link : https://zihaozhang1.github.io/zzpwgenerator.github.io/
 
 # User Story
 AS AN employee with access to sensitive data I WANT to randomly generate a password that meets certain criteria SO THAT I can create a strong password that provides greater security
