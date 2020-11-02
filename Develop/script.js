@@ -3,7 +3,7 @@
 var lowercase = "qwertyuiopasdfghjklzxcvbnm";
 var uppercase = "QWERTYUIOPASDFGHJKLZXCVBNM";
 var numbers   = "0123456789";
-var special   = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
+var special   = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
@@ -29,6 +29,27 @@ function writePassword() {
   if (lowercaseInput) {
     passwordSet += lowercase;
   }
+// Uppercase prompt
+  var uppercaseInput = confirm("Would you like uppercase letters to be included in your password?");
+
+  if (uppercaseInput) {
+      passwordSet += uppercase;
+  }
+
+// Numbers Prompt
+  var numbersInput = confirm("Would you like numbers to be included in your password?");
+
+  if (numbersInput) {
+      passwordSet += numbers;
+  }
+
+// Special characters prompt
+  var specialInput = confirm("Would you like special characters to be included in your password?");
+
+  if (specialInput) {
+      passwordSet += special;
+  }
+
 
 //Password display
   if (Number(passwordLengthInput >= 8) && Number(passwordLengthInput <= 128)) {
